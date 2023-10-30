@@ -1,0 +1,5 @@
+body {
+    background-image: url('/static/images/sua_imagem_de_fundo.jpg');
+    background-size: cover; /* Define o tamanho da imagem para cobrir a tela inteira */
+    /* Outras propriedades de estilo para o corpo da página */
+}

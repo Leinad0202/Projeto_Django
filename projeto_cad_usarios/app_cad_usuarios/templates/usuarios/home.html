@@ -1,0 +1,45 @@
+{% extends 'usuarios/base.html' %}
+{% block conteudo %}
+<div class="container center">
+    <form method="post">
+        {% csrf_token %}
+    
+        <h1>Cadastro de Usuários</h1>
+        {{ form.nome.label_tag }} {# Renderize a etiqueta (label) do campo nome #}
+        {{ form.nome }} {# Renderize o campo nome do formulário #}
+        {{ form.idade.label_tag }} {# Renderize a etiqueta (label) do campo idade #}
+        {{ form.idade }} {# Renderize o campo idade do formulário #}
+
+        <button class="form-control-sm" type="submit">Enviar</button>
+    </form>
+    
+    {# Se houver mensagens de erro, exiba-as aqui #}
+    {% for error in form.nome.errors %}
+    <div class="alert alert-danger">
+        {{ error }}
+    </div>
+    <script>
+        setTimeout(function() {
+            var errorDiv = document.querySelector(".alert.alert-danger");
+            if (errorDiv) {
+                errorDiv.style.display = "none";
+            }
+        }, 3000);  // Esconde a mensagem de erro após 3 segundos (3000 milissegundos)
+    </script>
+    {% endfor %}
+    
+    {% for error in form.idade.errors %}
+    <div class="alert alert-danger">
+        {{ error }}
+    </div>
+    <script>
+        setTimeout(function() {
+            var errorDiv = document.querySelector(".alert.alert-danger");
+            if (errorDiv) {
+                errorDiv.style.display = "none";
+            }
+        }, 3000);  // Esconde a mensagem de erro após 3 segundos (3000 milissegundos)
+    </script>
+    {% endfor %}
+</div>
+{% endblock %}

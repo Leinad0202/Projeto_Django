@@ -1,0 +1,44 @@
+
+  .center {
+        padding: 300px 0;
+        text-align: center;
+    }
+
+
+    .botao-redondo {
+        display: inline-block;
+        width: 50px; /* Defina o tamanho desejado para o botão */
+        height: 50px; /* A largura e a altura devem ser iguais para criar um círculo */
+        border-radius: 50%; /* Define o raio da borda para criar a forma circular */
+        background-color: purple; /* Cor de fundo roxa */
+        color: #fff; /* Cor do texto, branco no exemplo */
+        text-align: center; /* Centraliza o texto horizontalmente */
+        line-height: 50px; /* Centraliza o texto verticalmente */
+        text-decoration: none; /* Remove a formatação de link */
+        cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
+      }
+      
+
+      /* Estilo quando o mouse passa por cima do botão */
+      .botao-redondo:hover {
+        background-color: #6a5acd; /* Altera a cor de fundo ao passar o mouse */
+      }
+
+      .ajustar_lista {
+        width: 100%; /* Largura do contêiner, ajuste conforme necessário */
+        max-width: 600px; /* Largura máxima do contêiner */
+        margin: 0 auto; /* Centralizar horizontalmente */
+        padding: 20px; /* Espaçamento interno para conteúdo */
+    
+        /* Estilos adicionais, como cor de fundo e bordas */
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+      }
+
+      .fundo {
+        background-image: url('imagem\fundo_tela.jpg');
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o corpo */
+        background-position: center; /* Centraliza a imagem na horizontal e vertical */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+    }
+    
